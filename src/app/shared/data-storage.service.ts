@@ -29,7 +29,7 @@ export class DataStorageService {
   fetchRecipes() {
     return this.http
       .get<Recipe[]>(
-        'https://ng-recipe-book-3c4aa.firebaseio.com/recipes.json'
+        'https://ng-recipe-book-3c4aa.firebaseio.com//recipes.json'
       )
       .pipe(
         map(recipes => {
